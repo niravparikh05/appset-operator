@@ -1,0 +1,7 @@
+apiVersion: bundle.niravparikh05/v1beta1
+kind: AppSet
+metadata:
+  name: appset-sample
+spec:
+  # Add fields here
+  foo: bar

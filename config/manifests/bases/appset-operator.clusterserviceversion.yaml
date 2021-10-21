@@ -1,0 +1,50 @@
+apiVersion: operators.coreos.com/v1alpha1
+kind: ClusterServiceVersion
+metadata:
+  annotations:
+    alm-examples: '[]'
+    capabilities: Basic Install
+  name: appset-operator.v0.0.0
+  namespace: placeholder
+spec:
+  apiservicedefinitions: {}
+  customresourcedefinitions:
+    owned:
+    - description: AppSet is the Schema for the appsets API
+      displayName: App Set
+      kind: AppSet
+      name: appsets.bundle.niravparikh05
+      version: v1beta1
+  description: Application Set is responsible for maintaining a given set of application
+    pods as specified in the AppSet configuration
+  displayName: appset
+  icon:
+  - base64data: ""
+    mediatype: ""
+  install:
+    spec:
+      deployments: null
+    strategy: ""
+  installModes:
+  - supported: false
+    type: OwnNamespace
+  - supported: false
+    type: SingleNamespace
+  - supported: false
+    type: MultiNamespace
+  - supported: true
+    type: AllNamespaces
+  keywords:
+  - appset
+  - appsets
+  - as
+  links:
+  - name: Appset Operator
+    url: https://appset-operator.domain
+  maintainers:
+  - email: nir.parikh05@gmail.com
+    name: Nirav Parikh
+  maturity: alpha
+  provider:
+    name: niravparikh05
+  version: 0.0.0
